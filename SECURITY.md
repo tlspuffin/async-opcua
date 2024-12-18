@@ -8,5 +8,4 @@ Vulnerabilities will be patched in the master branch and potentially the last re
 
 ## Reporting a Vulnerability
 
-If you have a security issue, raise an open issue with the "security" label or contact the author at locka99 @AT@ gmail.com. Issue should describe the cause for concern, a way to reproduce 
-the issue and preferably a proposed fix.
+If you have a security issue, raise an open issue with the "security" label. Issue should describe the cause for concern, a way to reproduce the issue and preferably a proposed fix.

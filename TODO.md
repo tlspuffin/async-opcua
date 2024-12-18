@@ -4,7 +4,6 @@ This is a list of things that are known to be missing, or ideas that could be im
 
  - Flesh out the server and client SDK with tooling for ease if use.
    - Make it even easier to implement custom node managers.
-   - Write a generic `Browser` for the client, to make it easier to recursively browse node hierarchies. This should be made super flexible, perhaps a trait based approach where the browser is generic over something that handles the response from a browse request and returns what nodes to browse next...
    - Automate fetching data type definitions from the server for custom structs.
  - Support for StructureWithOptionalFields and Union in the encoding macros.
  - Implement Part 4 7.41.2.3, encrypted secrets. We currently only support legacy secrets. We should also support more encryption algorithms for secrets.

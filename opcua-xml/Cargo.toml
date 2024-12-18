@@ -4,10 +4,10 @@ version = "0.1.0"
 edition = "2021"
 description = "OPC UA XML loading library"
 authors = ["Einar Omang <einar@omang.com>"]
-homepage = "https://github.com/locka99/opcua"
-repository = "https://github.com/locka99/opcua"
+homepage = "https://github.com/freeopcua/rust-opcua"
+repository = "https://github.com/freeopcua/rust-opcua"
 license = "MPL-2.0"
-keywords = ["opcua","opc","ua"]
+keywords = ["opcua", "opc", "ua"]
 readme = "../README.md"
 documentation = "https://docs.rs/opcua/"
 
