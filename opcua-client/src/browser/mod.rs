@@ -46,7 +46,7 @@ use opcua_types::{
 };
 use tokio_util::sync::CancellationToken;
 
-mod implementation;
+mod browse;
 mod result;
 
 pub use result::{BrowserResult, NodeDescription};
