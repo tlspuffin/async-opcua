@@ -15,8 +15,8 @@ documentation = "https://docs.rs/async-opcua-xml/"
 name = "opcua_xml"
 
 [dependencies]
-chrono = { workspace = true }
-quick-xml = { workspace = true }
-roxmltree = { workspace = true }
-thiserror = { workspace = true }
-uuid = { workspace = true }
+chrono = { version = "^0.4", features = ["serde"] }
+quick-xml = "0.37.2"
+roxmltree = "^0.20"
+thiserror = "^1"
+uuid = { version = "^1", features = ["v4"] }

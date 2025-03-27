@@ -28,19 +28,19 @@ json = ["async-opcua-types/json"]
 discovery-server-registration = ["async-opcua-client"]
 
 [dependencies]
-arc-swap = { workspace = true }
-async-trait = { workspace = true }
-bitflags = { workspace = true }
-chrono = { workspace = true }
-futures = { workspace = true }
-hashbrown = { workspace = true }
+arc-swap = "^1"
+async-trait = "^0.1"
+bitflags = "^2"
+chrono = { workspace = true, features = ["serde"] }
+futures = "^0.3"
+hashbrown = "^0.15"
 log = { workspace = true }
-parking_lot = { workspace = true }
-postcard = { workspace = true }
+parking_lot = { version = "^0.12", features = ["send_guard"] }
+postcard = { version = "^1", features = ["use-std"] }
 regex = { workspace = true }
-serde = { workspace = true }
-tokio = { workspace = true }
-tokio-util = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+tokio = { version = "^1", features = ["full"] }
+tokio-util = { version = "^0.7", features = ["codec"] }
 
 async-opcua-client = { path = "../async-opcua-client", optional = true, version = "0.14.0" }
 async-opcua-core = { path = "../async-opcua-core", version = "0.14.0" }

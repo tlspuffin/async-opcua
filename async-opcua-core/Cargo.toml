@@ -16,16 +16,16 @@ edition = "2021"
 name = "opcua_core"
 
 [dependencies]
-bytes = { workspace = true }
-chrono = { workspace = true }
+bytes = "^1"
+chrono = { workspace = true, features = ["serde"] }
 log = { workspace = true }
-parking_lot = { workspace = true }
-serde = { workspace = true }
-serde_yaml = { workspace = true }
-thiserror = { workspace = true }
-tokio = { workspace = true }
-tokio-util = { workspace = true }
-url = { workspace = true }
+parking_lot = { version = "^0.12", features = ["send_guard"] }
+serde = { workspace = true, features = ["derive"] }
+serde_yaml = "^0.9"
+thiserror = "^1"
+tokio = { version = "^1", features = ["full"] }
+tokio-util = { version = "^0.7", features = ["codec"] }
+url = "^2"
 
 async-opcua-crypto = { path = "../async-opcua-crypto", version = "0.14.0" }
 async-opcua-types = { path = "../async-opcua-types", version = "0.14.0" }

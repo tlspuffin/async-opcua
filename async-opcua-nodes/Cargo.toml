@@ -19,11 +19,11 @@ name = "opcua_nodes"
 xml = ["async-opcua-types/xml", "async-opcua-xml"]
 
 [dependencies]
-bitflags = { workspace = true }
-hashbrown = { workspace = true }
+bitflags = "^2"
+hashbrown = "^0.15"
 log = { workspace = true }
 regex = { workspace = true }
-thiserror = { workspace = true }
+thiserror = "^1"
 
 async-opcua-macros = { path = "../async-opcua-macros", version = "0.14.0" }
 async-opcua-types = { path = "../async-opcua-types", version = "0.14.0" }

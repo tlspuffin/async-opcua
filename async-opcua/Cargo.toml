@@ -46,7 +46,7 @@ xml = ["async-opcua-types/xml", "async-opcua-nodes/xml", "async-opcua-xml"]
 
 
 [dependencies]
-chrono = { workspace = true }
+chrono = { workspace = true, features = ["serde"] }
 env_logger = { version = "0.10", optional = true }
 log = { workspace = true }
 
@@ -61,12 +61,12 @@ async-opcua-types = { path = "../async-opcua-types", version = "0.14.0" }
 async-opcua-xml = { path = "../async-opcua-xml", optional = true, version = "0.14.0" }
 
 [dev-dependencies]
-async-trait = { workspace = true }
-bytes = { workspace = true }
+async-trait = "^0.1"
+bytes = "^1"
 serde_json = { workspace = true }
 tempdir = "0.3"
-tokio = { workspace = true }
-tokio-util = { workspace = true }
+tokio = { version = "^1", features = ["full"] }
+tokio-util = { version = "^0.7", features = ["codec"] }
 
 # Include console-logging and json when building tests
 async-opcua = { path = ".", features = ["all", "json", "xml"] }
